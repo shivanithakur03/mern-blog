@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        table,th,td{
+            border:1px solid black;
+            border-collapse:collapse;
+        }
+     img{
+      height:50px;
+      width:50px;
+    }
+    </style>
+    </head>
+    <body>
+        
+    <!-- <table>
+        <thead>
+            <th>ID</th>
+            <th>Title</th>
+            <th>description</th>
+            <th>Price</th>
+            <th>Rate</th>
+        </thead>
+        <tbody id="table">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        fetch('https://fakestoreapi.com/products')
+        .then((y)=>{return y.json();})
+        .then((y)=>{
+    let product="";
+    y.map((value)=>{
+        product+=`
+        <tr>
+            <td>${value.id}</td>
+            <td>${value.title}</td>
+            <td>${value.description}</td>
+            <td>${value.price}</td>
+            <td>${value.rate}</td>
+            </tr>`
+        })
+    document.getElementById('table').innerHTML=product;
+}) -->
+
+<!-- function -->
+<script>
+// let myFn =(length,width)=>{
+//     let rectangleArea=length*width;
+//     return rectangleArea;
+// }
+// let total=myFn(12,2);
+// document.write(`area of rectangle is: ${total}`)
+
+//  let pi=3.14;
+// let myFn=(radius)=>{
+//     let ca=pi*radius*radius;
+//     let cp=pi*radius*2;
+//     return ca,cp;
+// } 
+// let total=myFn(4);
+// document.write(`area of circle is:${total}<br> perimeter of circle is :${total}`);
+
+<!-- oops -->
+// class hello{
+//     message(){
+//         console.log("this is first method")
+//     }
+//     message1(){
+//         console.log("this is second method")
+//     }
+// }
+// var a=new hello();
+// a.message();
+// a.message1();
+
+// constructor
+// class MyStudent{
+//     constructor(){
+//         console.log("this is constructor method in oops")
+//     }
+// }
+// let b=new MyStudent();
+
+//inheritance
+//class Student{
+//    constructor(name,age){
+//        this.StudentName=name;
+//        this.StudentAge=age;
+//         console.log(`my name is ${name} & my age is ${age}`)
+//    }
+//}
+//class StudentTwo extends Student{
+ //   constructor(name,age,id){
+   //     super(name,age)
+   //     this.StudentId=id;
+  //       console.log(`my name is ${name} & my id is ${id}`)
+  //  }
+//}
+//class StudentThree extends Student{
+ //   constructor(name,age,id,game){
+  //      super(name,age)
+   //     this.StudentGame=game;
+    //    console.log(`my name is ${this.StudentName} & i play ${this.StudentGame}`)
+    //}
+//}
+//let c=new StudentThree("shivani",20,567,"basketball");
+//let d=new StudentTwo("shivani",20,567,"basketball");
+
+//date method
+//let helloDate=new Date();
+       //document.write(helloDate)
+       //document.write(helloDate.getDay());
+       //document.write(helloDate.getDate());
+       //document.write(helloDate.getMonth()+1);
+       //document.write(helloDate.getFullYear());
+    //    document.write(helloDate.getHours());
+    //    document.write(helloDate.getMinutes());
+    //    document.write(helloDate.getSeconds());
+
+    //custom date method
+    // let customDate = new Date('1/6/2024 10:30:32');
+    // document.write(customDate)
+    // document.write(customDate.getDate());
+    // document.write(customDate.getMonth()+1);
+    // document.write(customDate.getHours());
+    // document.write(customDate.getDay());
+
+    let customDate = new Date('05/06/2022 01:40:55');
+    document.write(`today date is:0${customDate.getMonth()+1}/`);
+    document.write(`0${customDate.getDate()}/`);
+    document.write(`${customDate.getFullYear()}<br>`); 
+    document.write(`current time is:0${customDate.getHours()}:`);
+        document.write(`${customDate.getMinutes()}:`);
+       document.write(customDate.getSeconds());
+
+</script>
+    </body>

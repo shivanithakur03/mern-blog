@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    height:100vh;
+    width:100%;
+    background-image:url(https://wallpapers.com/images/hd/dark-cherry-blossom-0xhmnirsupueenpx.jpg);
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+   
+.calculator form input{
+    border:0;
+    width:60px;
+    height:60px;
+    margin:10px;
+    border-radius:10px;
+}
+.calculator input[type='button']{
+    color:black;
+}
+.calculator form input:hover{
+    
+    color:white;
+    width:70px;
+    height:60px;
+}
+form .display input{
+    text-align:center;
+    font-size:45px;
+    width:310px;
+}
+#add{
+    width:150px;
+}
